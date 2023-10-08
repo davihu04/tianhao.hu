@@ -33,6 +33,7 @@ namespace ConvertSistemi
             for(int i = 0; i < dp.Length; i++)
             { 
                 decimale=decimale + Convert.ToInt32(dp[esponente]*Math.Pow(256,i));
+                esponente--;
             }
             return decimale;
         }
